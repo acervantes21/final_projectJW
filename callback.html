@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var hash_string = window.location.hash.substring(1),
+        parts = hash_string.split(','),
+        parent_document = window.opener ? window.opener : parent;
+        
+      var code = parts[0].split('=')[1];
+      parent_document['handleCallbackResponse'](code);
+      if (window.opener) {
+        window.close();
+      }
+    </script>
+  </body>
+</html>
