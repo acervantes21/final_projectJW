@@ -34,7 +34,7 @@ $(document).ready(function () {
     var message = $('#inlineFormInput').val()
 
     // clear message input (for UX purposes)
-    $('#inlineFormInput').val('')
+    $('#inlineFormInput').val('thanks! we got your email')
 
     // create a section for messages data in your db
     var messagesReference = database.ref('inlineFormInput');
