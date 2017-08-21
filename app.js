@@ -51,6 +51,7 @@ $(document).ready(function () {
 
   window.handleCallbackResponse = function(response) {
     $('#inlineFormInput').val('test');
+    event.preventDefault()
     jQuery.ajax({
       type: 'get',
       url: "https://api.instagram.com/v1/users/636390097/media/recent/?count=6&access_token="+response,
