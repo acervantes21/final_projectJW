@@ -56,7 +56,7 @@ $(document).ready(function () {
       dataType: "jsonp",
       success: function( data ) {
         data.data.forEach(function(post) {
-          $("#instagram").append('<img src="' + post.images.standard_resolution.url +'" class="image"/>');
+          $("#instagram").append('<img src="' + post.images.standard_resolution.url +'" class="img-responsive"/>');
         })
       }
     });
