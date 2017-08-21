@@ -45,7 +45,7 @@ $(document).ready(function () {
     })
   })
 
-  // instagram shit
+  // instagram
   window.open("https://api.instagram.com/oauth/authorize/?client_id=60c4b769d25b4491a3c30a58f3383daf&redirect_uri=https://blooming-woodland-28032.herokuapp.com/callback.html&response_type=token&scope=public_content");
 
 
