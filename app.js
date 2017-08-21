@@ -52,7 +52,7 @@ $(document).ready(function () {
   window.handleCallbackResponse = function(response) {
     jQuery.ajax({
       type: 'get',
-      url: "https://api.instagram.com/v1/users/636390097/media/recent/?count=6&access_token="+response,
+      url: "https://api.instagram.com/v1/users/636390097/media/recent/?count=8&access_token="+response,
       dataType: "jsonp",
       success: function( data ) {
         data.data.forEach(function(post) {
